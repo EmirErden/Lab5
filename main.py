@@ -44,6 +44,8 @@ def swap_letters(test):
 
 
 #Question 3
+
+
 def search_letter(str1, str2):
     b = 0
     u = []
@@ -57,4 +59,8 @@ def search_letter(str1, str2):
 initialPassword = passGen(user_number)
 newPassword = rep_with_upper(initialPassword)
 finalPassword = swap_letters(newPassword)
+
+user_char = str(input("please enter a character to search: "))
+print(search_letter(finalPassword, user_char))
 print(finalPassword)
+
