@@ -11,6 +11,8 @@ while x:
     else:
         x = False
 
+#Question 1
+
 
 def passGen(number):
     password_list = random.choices(words, k=number)
@@ -18,6 +20,7 @@ def passGen(number):
     return password
 
 
+#Quesiton 2
 def rep_with_upper(password):
     a = 0
     res = []
@@ -40,7 +43,7 @@ def swap_letters(test):
     return newest_password
 
 
-
+#Question 3
 def search_letter(str1, str2):
     b = 0
     u = []
@@ -52,7 +55,6 @@ def search_letter(str1, str2):
 
 
 initialPassword = passGen(user_number)
-print(initialPassword)
 newPassword = rep_with_upper(initialPassword)
 finalPassword = swap_letters(newPassword)
 print(finalPassword)
